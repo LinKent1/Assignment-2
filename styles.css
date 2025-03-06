@@ -1,146 +1,168 @@
 /* General Reset and Box Model */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: white;
-  }
-  
-  /* Header Section */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 10;
-  }
-  
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .auth-buttons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .btn-login, .btn-register {
-    background-color: #e50914;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .btn-register {
-    background-color: #333;
-  }
-  
-  .btn-login:hover, .btn-register:hover {
-    opacity: 0.8;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-image: url('https://m.media-amazon.com/images/I/91g5Fj3UoCL._AC_SY679_.jpg'); /* Endgame Poster */
-    background-size: cover;
-    background-position: top left;
-    background-attachment: fixed;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 20px;
-    position: relative;
-    opacity: 0.8; /* Slight opacity to create an overlay effect */
-  }
-  
-  .hero-content {
-    max-width: 400px;
-    text-align: right;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .hero-title {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .hero-description {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  /* Feature Section */
-  .features {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .movie-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness */
-  }
-  
-  .movie-item {
-    text-align: center;
-    width: 250px;
-    margin-bottom: 30px;
-  }
-  
-  .movie-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .movie-title {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  /* Footer Section */
-  .footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-content p {
-    margin: 5px 0;
-  }
-  
-  /* Make the page content longer */
-  body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-content {
-    flex: 1;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-login, .btn-register {
+  background-color: #e50914;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-register {
+  background-color: #333;
+}
+
+.btn-login:hover, .btn-register:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('Endgame.jpg'); /* Endgame Poster */
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  position: relative;
+  opacity: 0.8; /* Slight opacity to create an overlay effect */
+}
+
+.hero-content {
+  max-width: 400px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Featured Movie Section */
+.featured-movie {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.featured-movie .movie-item {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured-movie .movie-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-movie .movie-item img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Feature Section */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.movie-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.movie-item {
+  text-align: center;
+  width: 250px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-10px); /* Pop-up effect */
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold; /* Title is now bold */
+}
+
+/* Footer Section */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
