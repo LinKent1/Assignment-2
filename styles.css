@@ -151,6 +151,13 @@ body {
   background-color: #393c41;
 }
 
+/* Hover effect for the three buttons */
+.icon:hover, .btn-join:hover {
+  transform: translateY(-5px); /* Reduced hover effect */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Subtle gradient */
+  color: #a9aaae; /* Ensures the text remains visible */
+}
+
 /* Featured Movie Section */
 .featured-movie {
   text-align: center;
@@ -174,7 +181,7 @@ body {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  margin-left: 40px; /* Shift the poster to the left */
+  margin-left: -20px; /* Adjust to move the image slightly to the left */
 }
 
 /* Feature Section */
@@ -215,8 +222,8 @@ body {
 }
 
 .movie-title {
-  margin-top: 15px; /* Increased margin for space */
-  font-size: 20px; /* Increased font size */
+  margin-top: 20px; /* Increased margin for space */
+  font-size: 22px; /* Increased font size */
   font-weight: bold;
 }
 
