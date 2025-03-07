@@ -199,13 +199,13 @@ body {
 .movieList {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .movieItem {
   text-align: center;
-  width: 250px; /* Ensure the width is consistent */
+  width: 250px; /* Set width for consistent alignment */
   margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
@@ -222,9 +222,13 @@ body {
 }
 
 .movieTitle {
-  margin-top: 20px; /* Increased margin for space */
+  margin-top: 15px; /* Adjusted margin for more space */
   font-size: 22px; /* Increased font size */
   font-weight: bold;
+  color: white; /* Ensures the title stands out */
+  white-space: nowrap; /* Prevent the title from breaking into multiple lines */
+  overflow: hidden; /* Hide overflow if the title is too long */
+  text-overflow: ellipsis; /* Add ellipsis (...) if the title overflows */
 }
 
 /* Footer Section */
